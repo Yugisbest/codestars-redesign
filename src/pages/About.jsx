@@ -1,11 +1,3 @@
-// function About() {
-//   return <h1>About CodeStars</h1>;
-// }
-
-// export default About;
-
-//The above code was to structure. Og code is written below
-
 function About() {
   return (
     <main className="about-page">
@@ -65,6 +57,55 @@ function About() {
             Turn ideas into real projects and learn how to
             work effectively with other developers.
           </p>
+        </div>
+
+      </section>
+
+      <section className="about-services">
+
+        <div className="about-intro-label">
+          <span>04</span>
+          <span>WHAT WE DO</span>
+        </div>
+
+        <div className="services-grid">
+
+          <div className="service-item">
+            <span>01</span>
+            <h3>Competitive Programming</h3>
+            <p>
+              Practice algorithms, data structures and problem solving
+              through coding challenges and contests.
+            </p>
+          </div>
+
+          <div className="service-item">
+            <span>02</span>
+            <h3>Workshops & Learning</h3>
+            <p>
+              Learn new technologies and strengthen your fundamentals
+              through technical sessions and peer learning.
+            </p>
+          </div>
+
+          <div className="service-item">
+            <span>03</span>
+            <h3>Projects & Building</h3>
+            <p>
+              Turn ideas into practical projects and gain experience
+              working with real development tools.
+            </p>
+          </div>
+
+          <div className="service-item">
+            <span>04</span>
+            <h3>Community & Events</h3>
+            <p>
+              Connect with fellow developers, participate in events
+              and learn by collaborating with others.
+            </p>
+          </div>
+
         </div>
 
       </section>

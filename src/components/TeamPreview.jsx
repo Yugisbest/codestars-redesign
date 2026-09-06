@@ -15,6 +15,7 @@ function TeamPreview() {
             key={member.name}
             name={member.name}
             role={member.role}
+            description={member.description}
           />
         ))}
       </div>

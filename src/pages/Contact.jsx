@@ -8,6 +8,7 @@
 
 import { useState } from "react";
 
+
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -34,12 +35,36 @@ function Contact() {
         </p>
       </div>
 
+      <div className="contact-info">
+
+        <div>
+          <span>01</span>
+          <h3>General Enquiries</h3>
+          <p>Have a question about CodeStars or our activities?</p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <h3>Collaborate</h3>
+          <p>Want to work with us on a technical event or project?</p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <h3>Join the Community</h3>
+          <p>Interested in learning, competing and building with us?</p>
+        </div>
+
+      </div>
+
       {submitted ? (
         <div className="contact-success">
           <span>✓</span>
-          <h2>Message received.</h2>
+          <h2>Thanks for reaching out.</h2>
+
           <p>
-            Thanks for reaching out to CodeStars.
+            Your message has been submitted successfully.
+            We'll get back to you soon.
           </p>
 
           <button onClick={() => setSubmitted(false)}>

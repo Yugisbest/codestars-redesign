@@ -36,27 +36,39 @@
 
 import { Link } from "react-router-dom";
 
-function EventCard({ title, category, description, tag }) {
+function EventCard({
+  title,
+  category,
+  description,
+  tag,
+  mode,
+  status,
+  details
+}) {
   return (
     <article className="event-card">
-
       <div className="event-card-top">
         <span>{category}</span>
         <span className="event-number">{tag}</span>
       </div>
-
       <h3>{title}</h3>
-
       <p className="event-description">
         {description}
       </p>
-
-      <Link to="/events" className="event-button">
-        View Event →
+      <div className="event-meta">
+        <span>{mode}</span>
+        <span>{status}</span>
+      </div>
+      <p className="event-details">
+        {details}
+      </p>
+      <Link
+        to={`/events/${title.toLowerCase().replaceAll(" ", "-")}`}
+        className="event-button"
+      >
+        View Details →
       </Link>
-
     </article>
   );
 }
-
 export default EventCard;
