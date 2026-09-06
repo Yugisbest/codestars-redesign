@@ -55,21 +55,15 @@ import events from "../data/events";
 function Events() {
   const [filter, setFilter] = useState("ALL");
 
-  const categories = [
-    "ALL",
-    "COMPETITIVE PROGRAMMING",
-    "CODING CONTEST",
-    "TECHNICAL EVENT"
-  ];
+  const filters = ["ALL", "UPCOMING", "PAST"];
 
   const filteredEvents =
     filter === "ALL"
       ? events
-      : events.filter((event) => event.category === filter);
+      : events.filter((event) => event.type === filter);
 
   return (
     <main className="events-page">
-
       <div className="page-header">
         <p>// CODESTARS EVENTS</p>
 
@@ -88,13 +82,13 @@ function Events() {
       </div>
 
       <div className="event-filters">
-        {categories.map((category) => (
+        {filters.map((filterOption) => (
           <button
-            key={category}
-            className={filter === category ? "filter-active" : ""}
-            onClick={() => setFilter(category)}
+            key={filterOption}
+            className={filter === filterOption ? "filter-active" : ""}
+            onClick={() => setFilter(filterOption)}
           >
-            {category}
+            {filterOption}
           </button>
         ))}
       </div>
@@ -105,6 +99,7 @@ function Events() {
             key={event.title}
             title={event.title}
             category={event.category}
+            type={event.type}
             description={event.description}
             tag={event.tag}
             mode={event.mode}
@@ -113,9 +108,9 @@ function Events() {
           />
         ))}
       </div>
-
     </main>
   );
 }
 
 export default Events;
+

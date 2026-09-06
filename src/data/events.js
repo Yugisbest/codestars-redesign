@@ -29,37 +29,42 @@
 
 const events = [
   {
+    title: "BloodBytes",
+    category: "CODING CONTEST",
+    type: "UPCOMING",
+    description:
+      "A Halloween-themed coding showdown built around competitive programming, logic and problem solving.",
+    tag: "01",
+    mode: "Competitive Programming",
+    status: "Upcoming",
+    details:
+      "Battle against time, bugs and brain-teasers in a coding contest designed to test your programming instincts."
+  },
+
+  {
     title: "Code UnCode",
     category: "COMPETITIVE PROGRAMMING",
+    type: "PAST",
     description:
-      "A coding challenge focused on problem solving, algorithms and competitive programming.",
-    tag: "01",
-    mode: "Online / Offline",
-    status: "Featured",
+      "A flagship ICPC-style competitive programming championship for developers who love challenging problems.",
+    tag: "02",
+    mode: "Individual Contest",
+    status: "Past",
     details:
-      "Test your problem-solving ability through programming challenges."
+      "Code UnCode brings programmers together for multi-stage algorithmic challenges and high-level competitive programming."
   },
+
   {
     title: "Code Bounty",
     category: "CODING CONTEST",
+    type: "PAST",
     description:
-      "Put your programming skills to the test by solving challenging problems under pressure.",
-    tag: "02",
-    mode: "Online / Offline",
-    status: "Featured",
-    details:
-      "Compete against other developers and solve problems within a limited time."
-  },
-  {
-    title: "BloodBytes",
-    category: "TECHNICAL EVENT",
-    description:
-      "A technical event combining coding, creativity and competitive problem solving.",
+      "An intra-college competitive programming event designed to test problem-solving skills across multiple rounds.",
     tag: "03",
-    mode: "Event",
-    status: "Featured",
+    mode: "Competitive Programming",
+    status: "Past",
     details:
-      "A technical experience designed to challenge your coding and problem-solving skills."
+      "A two-round coding contest where participants compete under time constraints and put their problem-solving skills to the test."
   }
 ];
 

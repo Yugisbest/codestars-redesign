@@ -39,10 +39,10 @@ import { Link } from "react-router-dom";
 function EventCard({
   title,
   category,
+  type,
   description,
   tag,
   mode,
-  status,
   details
 }) {
   return (
@@ -57,7 +57,7 @@ function EventCard({
       </p>
       <div className="event-meta">
         <span>{mode}</span>
-        <span>{status}</span>
+        <span>{type}</span>
       </div>
       <p className="event-details">
         {details}

@@ -8,7 +8,6 @@
 
 import { useState } from "react";
 
-
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -21,7 +20,7 @@ function Contact() {
     <main className="contact-page">
 
       <div className="page-header">
-        <p>// GET IN TOUCH</p>
+        <p>// JOIN CODESTARS</p>
 
         <h1>
           Let's build
@@ -30,83 +29,144 @@ function Contact() {
         </h1>
 
         <p className="page-description">
-          Interested in CodeStars? Have an idea, question,
-          or want to be part of the community? Reach out.
+          Whether you want to join the community, collaborate on an
+          event or simply have a question, we'd love to hear from you.
         </p>
       </div>
 
-      <div className="contact-info">
+
+      {/* DIRECT CONTACT */}
+
+      <section className="contact-direct">
+
+        <div>
+          <p className="contact-label">// EMAIL</p>
+          <a href="mailto:djscodestars@gmail.com">
+            djscodestars@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <p className="contact-label">// LOCATION</p>
+          <p>
+            DJSCE
+            <br />
+            Mumbai, India
+          </p>
+        </div>
+
+      </section>
+
+
+      {/* CONTACT OPTIONS */}
+
+      <section className="contact-info">
 
         <div>
           <span>01</span>
           <h3>General Enquiries</h3>
-          <p>Have a question about CodeStars or our activities?</p>
+          <p>
+            Have a question about CodeStars, our activities
+            or upcoming events?
+          </p>
         </div>
 
         <div>
           <span>02</span>
           <h3>Collaborate</h3>
-          <p>Want to work with us on a technical event or project?</p>
+          <p>
+            Want to work with us on a technical event,
+            workshop or project?
+          </p>
         </div>
 
         <div>
           <span>03</span>
           <h3>Join the Community</h3>
-          <p>Interested in learning, competing and building with us?</p>
-        </div>
-
-      </div>
-
-      {submitted ? (
-        <div className="contact-success">
-          <span>✓</span>
-          <h2>Thanks for reaching out.</h2>
-
           <p>
-            Your message has been submitted successfully.
-            We'll get back to you soon.
+            Interested in learning, competing and building
+            with other developers?
           </p>
-
-          <button onClick={() => setSubmitted(false)}>
-            Send another message
-          </button>
         </div>
-      ) : (
-        <form className="contact-form" onSubmit={handleSubmit}>
 
-          <label>
-            Your name
-            <input
-              type="text"
-              placeholder="Enter your name"
-              required
-            />
-          </label>
+      </section>
 
-          <label>
-            Your email
-            <input
-              type="email"
-              placeholder="you@example.com"
-              required
-            />
-          </label>
 
-          <label>
-            Message
-            <textarea
-              placeholder="Tell us something..."
-              rows="6"
-              required
-            />
-          </label>
+      {/* CONTACT FORM */}
 
-          <button type="submit">
-            Send Message →
-          </button>
+      <section className="contact-form-section">
 
-        </form>
-      )}
+        <div className="contact-form-heading">
+          <p>// SEND A MESSAGE</p>
+
+          <h2>
+            Start a
+            <br />
+            <span>conversation.</span>
+          </h2>
+        </div>
+
+        {submitted ? (
+
+          <div className="form-success">
+            <p>// MESSAGE RECEIVED</p>
+
+            <h3>Thanks for reaching out.</h3>
+
+            <p>
+              Your message has been captured by this frontend
+              prototype. In a production version, this form
+              would connect to a backend or email service.
+            </p>
+
+            <button
+              onClick={() => setSubmitted(false)}
+              className="secondary-button"
+            >
+              Send Another →
+            </button>
+          </div>
+
+        ) : (
+
+          <form onSubmit={handleSubmit} className="contact-form">
+
+            <label>
+              NAME
+              <input
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </label>
+
+            <label>
+              EMAIL
+              <input
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+
+            <label>
+              MESSAGE
+              <textarea
+                rows="6"
+                placeholder="Tell us what you're working on..."
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit" className="primary-button">
+              Send Message →
+            </button>
+
+          </form>
+
+        )}
+
+      </section>
 
     </main>
   );

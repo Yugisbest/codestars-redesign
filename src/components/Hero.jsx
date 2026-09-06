@@ -29,17 +29,17 @@ function Hero() {
             ]);
         }
 
-        else if (cmd === "events") {
+        else if (cmd === "events" || cmd === "events list") {
             setOutput(["Opening events..."]);
             navigate("/events");
         }
 
-        else if (cmd === "about") {
+        else if (cmd === "about" || cmd === "about us") {
             setOutput(["Opening about page..."]);
             navigate("/about");
         }
 
-        else if (cmd === "contact") {
+        else if (cmd === "contact" || cmd === "join") {
             setOutput(["Opening contact page..."]);
             navigate("/contact");
         }

@@ -23,28 +23,52 @@
 
 const team = [
   {
-    name: "Technical Team",
-    role: "TECH",
+    name: "Chairperson",
+    role: "LEADERSHIP",
     description:
-      "Builds and maintains technical projects, conducts coding activities and helps members improve their programming skills."
+      "Provides overall direction to CodeStars and coordinates the committee's vision, initiatives and activities."
   },
   {
-    name: "Creative Team",
-    role: "CREATIVE",
+    name: "Vice Chairpersons — Tech",
+    role: "LEADERSHIP",
     description:
-      "Creates the visual identity and creative content that represents CodeStars across its events and platforms."
+      "Leads the technical direction of the committee, projects, programming activities and technical initiatives."
   },
   {
-    name: "Events Team",
-    role: "EVENTS",
+    name: "Vice Chairpersons — Admin",
+    role: "ADMINISTRATION",
     description:
-      "Plans and coordinates coding competitions, technical events and community activities."
+      "Coordinates administration, planning and the operational side of committee activities."
   },
   {
-    name: "Marketing Team",
+    name: "Tech Heads",
+    role: "TECHNICAL",
+    description:
+      "Builds technical initiatives, conducts programming activities and helps members grow their problem-solving skills."
+  },
+  {
+    name: "Tech-Editorial Heads",
+    role: "EDITORIAL",
+    description:
+      "Creates technical content, documentation and educational material for the CodeStars community."
+  },
+  {
+    name: "Creatives Heads",
+    role: "CREATIVES",
+    description:
+      "Handles visual communication, branding and creative content for CodeStars events and platforms."
+  },
+  {
+    name: "Marketing Heads",
     role: "MARKETING",
     description:
-      "Handles outreach, promotion and communication to help CodeStars connect with the wider student community."
+      "Manages outreach, promotion and communication to connect CodeStars with the wider student community."
+  },
+  {
+    name: "Events Heads",
+    role: "EVENTS",
+    description:
+      "Plans and coordinates coding competitions, workshops and community events."
   }
 ];
 
