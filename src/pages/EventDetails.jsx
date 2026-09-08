@@ -64,6 +64,28 @@ function EventDetails() {
 
       </section>
 
+      <section className="event-team-builder">
+
+        <div>
+          <span>🚀 TEAM BUILDING</span>
+
+          <h2>Looking for teammates?</h2>
+
+          <p>
+            Find CodeStars members with complementary skills
+            and build your perfect hackathon team.
+          </p>
+        </div>
+
+        <a
+          href="/team-builder"
+          className="event-team-button"
+        >
+          Find Teammates →
+        </a>
+
+      </section>
+
       <section className="event-about">
 
         <p>// ABOUT THE EVENT</p>
