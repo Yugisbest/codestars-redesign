@@ -4,13 +4,24 @@ import team from "../data/team";
 function TeamPreview() {
   return (
     <section className="team-preview">
+
       <div className="section-heading">
-        <p>// THE COMMUNITY</p>
-        <h2>Built by developers.</h2>
+        <div>
+          <p>// THE COMMUNITY</p>
+          <h2>Build with CodeStars.</h2>
+          <span>
+            Meet developers, discover complementary skills and
+            build your next project together.
+          </span>
+        </div>
+
+        <a href="/team-builder" className="section-link">
+          Find Teammates →
+        </a>
       </div>
 
       <div className="team-grid">
-        {team.map((member) => (
+        {team.slice(0, 4).map((member) => (
           <TeamCard
             key={member.name}
             name={member.name}
@@ -19,6 +30,7 @@ function TeamPreview() {
           />
         ))}
       </div>
+
     </section>
   );
 }

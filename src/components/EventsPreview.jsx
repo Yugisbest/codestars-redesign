@@ -6,18 +6,21 @@ function EventsPreview() {
     <section className="events-preview">
 
       <div className="section-heading">
-        <p>// EVENTS</p>
-        <h2>What's happening.</h2>
+        <div>
+          <p>// EVENTS</p>
+          <h2>What's happening.</h2>
+          <span>
+            Explore upcoming events, workshops and opportunities.
+          </span>
+        </div>
+
+        <a href="/events" className="section-link">
+          View all events →
+        </a>
       </div>
 
       <div className="events-grid">
-        {events.map((event) => (
-          // <EventCard
-          //   key={event.title}
-          //   title={event.title}
-          //   category={event.category}
-          //   date={event.date}
-          // />
+        {events.slice(0, 3).map((event) => (
           <EventCard
             key={event.title}
             title={event.title}

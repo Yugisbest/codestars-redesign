@@ -14,6 +14,21 @@ function Footer() {
       </div>
 
       <div className="footer-links">
+        <a
+          href="https://www.instagram.com/djsce.codestars/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram ↗
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/djs-codestars/posts/?feedView=all"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn ↗
+        </a>
         <Link to="/">Home</Link>
         <Link to="/events">Events</Link>
         <Link to="/about">About</Link>
