@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const defaultUser = {
   name: "Yug Dhameliya",
@@ -353,26 +354,17 @@ function Profile() {
 
         <div className="community-actions">
 
-          <a
-            href="/friends"
-            className="community-button"
-          >
+          <Link to="/friends" className="...">
             🤝 Friends
-          </a>
+          </Link>
 
-          <a
-            href="/leaderboard"
-            className="community-button"
-          >
+          <Link to="/leaderboard" className="...">
             🏆 Leaderboard
-          </a>
+          </Link>
 
-          <a
-            href="/team-builder"
-            className="community-button"
-          >
-            🚀 Team Builder
-          </a>
+          <Link to="/team-builder" className="...">
+            🚀 Find Teammates
+          </Link>
 
         </div>
 

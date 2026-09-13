@@ -77,12 +77,12 @@ function EventDetails() {
           </p>
         </div>
 
-        <a
-          href="/team-builder"
+        <Link
+          to="/team-builder"
           className="event-team-button"
         >
           Find Teammates →
-        </a>
+        </Link>
 
       </section>
 

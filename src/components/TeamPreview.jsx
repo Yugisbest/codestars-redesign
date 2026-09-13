@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TeamCard from "./TeamCard";
 import team from "../data/team";
 
@@ -15,9 +16,9 @@ function TeamPreview() {
           </span>
         </div>
 
-        <a href="/team-builder" className="section-link">
+        <Link to="/team-builder" className="section-link">
           Find Teammates →
-        </a>
+        </Link>
       </div>
 
       <div className="team-grid">
