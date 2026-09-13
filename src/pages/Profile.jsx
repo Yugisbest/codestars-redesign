@@ -354,15 +354,15 @@ function Profile() {
 
         <div className="community-actions">
 
-          <Link to="/friends" className="...">
+          <Link to="/friends" className="community-link">
             🤝 Friends
           </Link>
 
-          <Link to="/leaderboard" className="...">
+          <Link to="/leaderboard" className="community-link">
             🏆 Leaderboard
           </Link>
 
-          <Link to="/team-builder" className="...">
+          <Link to="/team-builder" className="community-link">
             🚀 Find Teammates
           </Link>
 
